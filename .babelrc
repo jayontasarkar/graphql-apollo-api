@@ -1,0 +1,26 @@
+{
+   "presets": [
+     "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./"
+                ],
+                "alias": {
+                    "@": "./src",
+                    "@constants": "./src/constants",
+                    "@resolvers": "./src/resolvers",
+                    "@typeDefs": "./src/typeDefs",
+                    "@utils": "./src/utils",
+                    "@models": "./src/models",
+                    "@loaders": "./src/loaders",
+                    "@subscription": "./src/subscription"
+                }
+            }
+        ]
+    ]
+}
